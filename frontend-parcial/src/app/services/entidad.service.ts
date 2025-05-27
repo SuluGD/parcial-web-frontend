@@ -7,7 +7,7 @@ import { Entidad } from '../models/entidad.model';
   providedIn: 'root'
 })
 export class EntidadService {
-  private apiUrl = 'http://localhost:8080/api/entidades'; // Adjust this URL to match your backend
+  private apiUrl = 'http://localhost:8080/api/entidades';
 
   constructor(private http: HttpClient) { }
 
