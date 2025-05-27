@@ -1,5 +1,17 @@
 .container {
   padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #1976d2;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .form-container {
@@ -7,15 +19,54 @@
   flex-direction: column;
   max-width: 500px;
   margin: 0 auto;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 mat-form-field {
   margin-bottom: 20px;
+  width: 100%;
+}
+
+mat-form-field ::ng-deep .mat-form-field-wrapper {
+  margin-bottom: -1.25em;
+}
+
+mat-form-field ::ng-deep .mat-form-field-flex {
+  background-color: white;
+  border-radius: 4px;
 }
 
 .button-container {
   display: flex;
   justify-content: flex-end;
-  gap: 10px;
-  margin-top: 20px;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+button[mat-raised-button] {
+  background-color: #1976d2;
+  color: white;
+  padding: 8px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+button[mat-raised-button]:hover {
+  background-color: #1565c0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button[mat-button] {
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+button[mat-button]:hover {
+  color: #1976d2;
+  background-color: rgba(25, 118, 210, 0.04);
 } 
